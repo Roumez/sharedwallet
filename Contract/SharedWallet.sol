@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract SharedWallet {
+contract SharedWallet is Ownable {
 
 // Mapping from account addresses to current balance.
 mapping (address => uint256) private _balances;
